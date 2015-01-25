@@ -19,19 +19,11 @@
           <div class="header">
             <h1 class="title"><a href="/">{{ site.name }}</a></h1>
             <a class="extra" href="/">home</a>
-            <a class="extra" href="">category</a>
+            <a class="extra" href="/catogory.html">category</a>
           </div>
 
           {{ content }}
-          <div class="categories">
-            <div class='category'>
-              <h2></h2>
-              <ul>
-                {% for cat in site.categories %}
-                <li><a href="{{ site.BASE_PATH }}/category.html#{{ cat[0] }}">{{ cat[0] }}&nbsp;&nbsp;(<span>{{ cat[1].size }}</span>)</a></li>
-                {% endfor %}
-              </ul>
-          </div>
+          
 
           <div class="footer">
             <div class="contact">
