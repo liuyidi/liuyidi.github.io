@@ -1,3 +1,11 @@
+---
+layout: post
+titel: "vim-command"
+date: 2015-01-09 17:20
+categoryies: linux/vim/shell
+tags:linux,vim
+---
+
 # liuyidi.github.io
 
 ###为什么要做这个博客
