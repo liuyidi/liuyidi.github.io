@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "vim-command"
+title: "why do I notes like this?"
 date: 2015-01-09 17:20
 categories: linux/vim/shell
 tags: linux,vim
