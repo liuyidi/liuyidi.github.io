@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "why do I notes like this?"
-date: 2015-01-09 17:20
-categories: linux/vim/shell
-tags: linux,vim
+title: "为什么要做这个技术博客?"
+date: 2015-01-25 22:20
+categories: [thought]
+tags: [notes]
 ---
 
 # liuyidi.github.io
