@@ -2,7 +2,7 @@
 layout: post
 titel: "vim-command"
 date: 2015-01-09 17:20
-categoryies: linux/vim/shell
+categories: linux/vim/shell
 tags:linux,vim
 ---
 
