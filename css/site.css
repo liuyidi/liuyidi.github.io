@@ -148,6 +148,9 @@ a:visited { color: #a0a; }
   border: none;
 }
 
+/* page */
+.arc-list{list-style-type: none;}
+
 /* terminal */
 .post pre.terminal {
   border: 1px solid #000;
