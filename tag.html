@@ -6,11 +6,11 @@ date: 2015-02-01 02:00
 
 {% for tag in site.tags %}
 
-<h2>{{ tag | first }}&nbsp;&nbsp;&nbsp;&nbsp;(共{{ tag | last | size }}篇文章)</h2>
+<h5>{{ tag | first }}&nbsp;&nbsp;&nbsp;&nbsp;(共{{ tag | last | size }}篇文章)</h5>
 
 </span>
 
-<ul class="arc-list">
+<ul>
 
     {% for post in tag.last %}
 

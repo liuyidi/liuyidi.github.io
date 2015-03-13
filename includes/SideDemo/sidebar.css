@@ -1,0 +1,132 @@
+*{margin: 0px; padding: 0px;}
+ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+
+#sidebar{
+	width:35px;
+	background-color: #e1e1e1;
+	padding-top: 70px;
+	position: fixed;
+	min-height: 100%;
+	z-index:100 ;
+}
+
+.item{
+	font-size: 12px;
+	font-family:'Microsoft Yahei';
+	text-align: center;
+	margin-top:8px;
+
+}
+
+#sidespace{
+	height: 40px;
+	width: 35px;
+}
+
+#closebar{
+	position: absolute;
+	bottom: 30px;
+	width:35px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.nav-content{
+	width:200px;
+	position: fixed;
+	min-height: 100%;
+	left:35px;
+	background-color: #e1e1e1;
+	border: 1px solid black;
+	z-index: 99;
+	opacity: 0;
+}
+
+.nav-con-close{
+	position: absolute;
+	top: 5px;
+	right:5px;
+}
+
+.sidebar-move-left{
+	-webkit-animation: smf;
+	-moz-animation:smf;
+	-o-animation: smf;
+	animation: smf;
+	
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+
+	-webkit-animation-iteration-count: 1;
+	-moz-animation-iteration-count: 1;
+	-o-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+
+}
+@-webkit-keyframes smf{
+	from {
+
+	}
+	to {
+		-webkit-transform : translateX(-120px);
+		transform : translateX(-120px);
+	}
+}
+
+@keyframes smf{
+	from {
+
+	}
+	to {
+		transform : translateX(-120px);
+	}
+}
+
+.closebar-move-right{
+	-webkit-animation: cmr;
+	-o-animation: cmr;
+	-moz-animation: cmr;
+	animation: cmr;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+@-webkit-keyframes cmr{
+	from{
+	}
+	to{
+		-webkit-transform:translateX(160px),rotate(405deg),scale(1.5);
+		transform:translateX(160px),rotate(405deg),scale(1.5);	    
+	}
+}
+
+@keyframes cmr{
+	from{
+	}
+	to{
+		-webkit-transform:translateX(160px),rotate(405deg),scale(1.5);
+		transform:translateX(160px),rotate(405deg),scale(1.5);	    
+	}
+}
+
+.sidebar-move-right{}
+.closebar-move-left{}
