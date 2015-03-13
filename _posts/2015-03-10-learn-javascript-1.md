@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "learn javascript 1"
+title: "learn javascript one"
 date: 2015-03-10 22:20
 categories: [javascript]
 tags: [javascript,DOM]
