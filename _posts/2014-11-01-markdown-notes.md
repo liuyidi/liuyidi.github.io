@@ -9,12 +9,21 @@ tags: [markdown]
 #####一、Submit Text2中Markdown的安装
 
 1. 安装Package Control
-   * 按Ctrl+` 打开console
+   * 按Ctrl+\` 打开console
    * 粘贴下面的代码到console并回车
-   * 重启Sublime Text2 
+   * 重启Sublime Text2.
+   
+   ```  import urllib2,os;
+        pf='Package Control.sublime-package';
+        ipp=sublime.installed_packages_path();
+        os.makedirs(ipp) 
+        if 
+           not os.path.exists(ipp) 
+        else 
+           None;
+        open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())
    ```
-   import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())
-   ```
+   
 2. 安装Markdown Preview
    * 按Ctrl + Shift + P
    * 输入pci 后回车(Package Control: Install Package)
@@ -48,7 +57,7 @@ tags: [markdown]
     >  2. So I should be item 2
 
 * **代码**:  可以使用四个空格生成,也可以使用
-   >  `   或者 ```
+   >  \`   或者 ```
 * **图片**:  
    `![ text ]( http://xxx.com/path/to/img.jpg "title")`
    > 一个惊叹号！
