@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "learn javascript 2"
+title: "javascript基础学习二之BOM"
 date: 2015-03-11 12:20
 categories: [javascript]
 tags: [javascript,BOM]
