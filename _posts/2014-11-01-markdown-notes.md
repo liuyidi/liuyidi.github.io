@@ -5,18 +5,15 @@ date: 2014-11-01 20:20
 categories: [markdown]
 tags: [markdown]
 ---
-####一、Submit Text2中Markdown的安装
+
+#####一、Submit Text2中Markdown的安装
+
 1. 安装Package Control
    * 按Ctrl+` 打开console
    * 粘贴下面的代码到console并回车
    * 重启Sublime Text2 
    ```
-   import urllib2,os;
-   pf='Package Control.sublime-package';
-   ipp=sublime.installed_packages_path();
-   os.makedirs(ipp) if not os.path.exists(ipp) else None;
-   open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen(  
-    'http://sublime.wbond.net/'+pf.replace(' ','%20')).read())
+   import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())
    ```
 2. 安装Markdown Preview
    * 按Ctrl + Shift + P
@@ -32,7 +29,9 @@ tags: [markdown]
    * 输入mp后回车(Markdown Preview:Preview in Browser)
    * 此时就可以在浏览器里看到刚才编辑的文档了
 
-####二、Markdown基础语法
+
+#####二、Markdown基础语法
+
 - 使用" \*\* " 或 " \__ " 包裹文本产生strong效果: **强调**    __文本__
 - 使用" * "或 "_" 包裹文本产生**斜体**效果:  *斜体*      
 * __标题(h1~h6)格式__ 为使用相应个数的"#"作前缀,比如以下代码表示h3:   
@@ -49,7 +48,7 @@ tags: [markdown]
     >  2. So I should be item 2
 
 * **代码**:  可以使用四个空格生成,也可以使用
-   \>  `   或者 ```
+   >  `   或者 ```
 * **图片**:  
    `![ text ]( http://xxx.com/path/to/img.jpg "title")`
    > 一个惊叹号！
