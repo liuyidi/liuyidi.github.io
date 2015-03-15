@@ -47,9 +47,88 @@ tags: [javascript]
      test();
      alert(message);  // "hi"
      ```
-     *虽然省略var操作符可以定义全局变量，但是不推荐，这样会造成局部作用域中定义的全局变量很难维护.*
+     ** 虽然省略var操作符可以定义全局变量，但是不推荐，这样会造成局部作用域中定义的全局变量很难维护. **
    * 可以使用一条语句定义多个变量，只要像下面这样把每个变量（初始化或不初始化都可）用逗号分隔开即可:
      ```
      var message = "hi", found = false, age = 29;
      ```
+
+
+#####二、数据类型
+> ECMAScript有5种简单的数据类型(也称为基本数据类型):Undefined、Null、Boolean、Number和String、Object(本质上是由一组无序的名值对组成的).ECMAScript不支持任何创建自定义类型的机制.而所有值都将是上述6种数据类型之一.
+
+1. __typeof操作符__ 
+    用来检测给定变量的数据类型.对一个值使用typeof操作符可能返回下列某个字符串:
+    - "undefined"————如果这个值未定义;
+    - "boolean"——————如果这个值是布尔值;(true,false)
+    - "string" ——————如果这个值是字符串;("string")
+    - "number" ——————如果这个值是数值; (1,1.1,2.3)
+    - "object" ——————如果这个值是对象或null;
+    - "function" ————如果这个值是函数; (function)
+
+2. __Undefined类型__
+
+    *  Undefined类型只有一个值,即特殊的undefined.在使用var声明变量但未对其加以初始化时,这个变量的值就是undefined.
+
+    `var message; alert(message == undefined); //true `
+
+    *  一般而言,不存在需要显式地把一个变量设置为undefined值的情况.
+    *  包含undefined的值的变量与尚未定义的变量还是不一样的.
+
+    ```
+    var message;           //这个变量声明之后默认取得了undefined值.
+    //下面这个变量没有声明
+    //var age;
+    alert(message);        // "undefined"
+    alert(age);            // 产生错误
+
+    ``` 
+
+    * 未初始化的变量执行typeof操作符会返回undefined值.而对未声明的变量执行typeof操作符同样也会返回undefined值.
+
+    ```
+    var message;
+    //var age;
+    console.log(typeof message);  // "undefined"
+    console.log(typeof age);      // "undefined"
+    ```
+
+3. **Null类型**
+    - Null也是只有一个值的数据类型,这个特殊的值是null.从逻辑角度来看,null值表示一个**空对象指针**,而这也正是typeof操作符检查null值时会返回"object"的原因.
+    `var car=null;  console.log(typeof null); // "object" `
+    * 如果定义的变量准备在将来用于保存对象，那么最好将该变量初始化为null而不是其他值,
+    ```
+    if(car != null){
+         //只要直接检查null值就可以知道变量car是否已经保存了一个对象的引用了.
+    }
+    ```
+    * undefined值是派生自null值的,因此ECMA-262规定对它们的相等性测试要返回true;
+    ` alert(null == undefined);  //true `
+    * 只要意在保存对象的变量还没有真正保存对象,就应该明确让改变量保存null值.
+
+4. **Boolean类型**
+> 布尔值只有两个字面值: true和false;  这两个值与数字值不是一回事,因为true不一定是1,而false不一定等于0.
+
+    * Boolean类型的字面值是**区分大小写**的,也就是True和False都不是Boolean值,只是标识符而已.
+    * ECMAScript中所有类型的值都可以转换为Boolean值,可以调用转型函数Boolean();
+    ```
+    var message = "hello,world!";
+    var messageAsBoolean = Boolean(message);  //值为true
+    ```
+
+5. **Number类型**
+    
+6. **String类型**
+
+7. **Object类型**
+
+#####三、操作符
+
+
+#####四、语句
+1. if语句
+
+2. 
+
+#####五、函数
 
