@@ -3,7 +3,7 @@ layout: post
 title: "Python学习笔记之Django"
 date: 2015-01-26 14:37
 categories: [Python]
-tags: [python]
+tags: [python,Django]
 ---
 
 ##什么是Django?
