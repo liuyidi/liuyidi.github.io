@@ -6,10 +6,7 @@ categories: [javascript]
 tags: [javascript]
 ---
 
-###Javascript学习之Function类型
-
-
-####1.函数声明与函数表达式
+###1.函数声明与函数表达式
 - 函数声明与函数表达式的区别:
 
 	```js
@@ -24,10 +21,10 @@ tags: [javascript]
 	```
 - 函数的名字仅仅是一个包含指针的变量而已.
 
-####2.作为值的函数
+###2.作为值的函数
 
 
-####3.函数内部属性
+###3.函数内部属性
 - 在函数内部有两个特殊的属性: arguments & this . 
 - arguments是一个类数组对象,包含着传入函数中的所有参数.主要作用就是保存函数参数,该对象有一个属性名叫:callee,该属性是一个指针,指向拥有这个arguments对象的函数.
 	
@@ -56,8 +53,9 @@ tags: [javascript]
 	console.log(factorial);     //Null
 	```
 
-- **this:**
-####4.函数的属性和方法
+- this:;
+
+###4.函数的属性和方法
 - 每个函数都包含两个属性:length & prototype, length属性表示函数希望接受的命名参数的个数.
 
 	```js
@@ -66,11 +64,11 @@ tags: [javascript]
 	} 
 	console.log(sum.length);   //2
 	```
-	
+
 - 每个函数都有两个非继承来的方法: apply() & call() ,两者的区别在于接收参数的方式不同.
 
 
 - 每个函数都有toString()、toLocaleString()、valueOf()以及caller属性
 
 
-####5.递归
+###5.递归

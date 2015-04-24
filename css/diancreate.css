@@ -268,12 +268,13 @@ strong, b{font-weight:bold;color:#000;}
 h1,h2,h3,h4,h5,h6{
   margin-bottom: 0.4em;  /* 16*0.4=6.4px */
   line-height: 1.5em;
+  font-weight: normal;
 }
-h1{font-size: 2em;} 
-h2{font-size: 1.8em;}
-h3{font-size: 1.6em;}
-h4{font-size: 1.4em;}
-h5,h6{font-size: 1.2em;}
+h1{font-size: 1.8em;} 
+h2{font-size: 1.6em;}
+h3{font-size: 1.4em;}
+h4{font-size: 1.2em;}
+h5,h6{font-size: 1em;}
 
 p{font-size: 1em; line-height: 1.8em;}
 

@@ -27,15 +27,15 @@
 .main{
   background: white;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  margin-top: 10px;
+  margin-top: 0px;
   padding: 20px;
 }
 
 .site {
-  font-size: 100%;
+  font-size: 115%;
   text-align: justify;
   width: 42em;
-  margin: 3em auto 2em;
+  margin: 1em auto 1em;
   line-height: 1.5em;
 }
 
@@ -50,11 +50,11 @@
 }
 
 .title a {
-  color: #a00;
+  
 }
 
 .title a:hover {
-  color: #000;
+  
 }
 
 .header a.extra {
@@ -103,7 +103,8 @@
 /*
 /*****************************************************************************/
 .post{
-  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #efefef;
 }
 /* standard */
 .post pre {
@@ -121,9 +122,7 @@
 }
 
 .post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
+
 }
 
 .post pre code {

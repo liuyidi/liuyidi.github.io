@@ -6,15 +6,15 @@ categories: [javascript]
 tags: [javascript]
 ---
 
-#####变量
+###变量
 > JavaScript的变量与其他语言的变量有很大区别,JavaScript变量松散类型的本质,决定了它**不存在定义某个变量时必须要保存何种数据类型的规则**.
 
 
 
-#####引用类型
+###引用类型
 > 引用类型的值(对象)是引用类型的一个实例.新对象是使用new操作符后跟一个构造函数来创建的,构造函数本身是一个函数,只不过该函数是出于创建新对象的目的而定义的.
 
-``` 
+```js
     var person = new Object();
    //这行代码创建了Object引用类型的一个新实例,然后把该实例保存在了变量person中,
    使用的构造函数是Object,它只为新对象定义了默认的属性和方法;
@@ -24,14 +24,14 @@ tags: [javascript]
 1. Object类型
 
     * 创建Object实例的方式有两种,第一种是使用new操作符后跟Object构造函数.
-    ```
+    ```js
     var person = new Object();
     person.name = "liuyidi";
     person.age = 22;
     ```
     * 另一种方式就是使用**对象字面量**
     表示法,对象字面量是对象定义的一种简写形式,目的在于简化创建包含大量属性的对象的过程.
-    ```
+    ```js
     var person = {
         name : "liuyidi",
         age  : 22
@@ -73,7 +73,7 @@ tags: [javascript]
 
     - 创建数组的基本方式有两种,第一种是使用Array构造函数
 
-     ```
+     ```js
       var colors = new Array(); 
       //也可以预先设置数组要保存的项目数量
       var colors = new Array(20);  每一项的初始值都是undefined.
@@ -82,7 +82,7 @@ tags: [javascript]
 
     - 创建数组的第二种方式:
 
-     ```
+     ```js
       var colors = ["red","blue","green"];
       var names = [];
       console.log(colors.length);  //3
@@ -91,12 +91,12 @@ tags: [javascript]
 
     - 利用length属性可以方便地在数组末尾添加新项.
 
-     ```
-     ###减少一项
+     ```js
+     //减少一项
       var colors = ["red","blue","green"];
       colors.length = 2;
       console.log(colors[2]);  //undefined
-     ###增加一项
+     //增加一项
       var colors = ["red","blue","green"];
       colors.length = 4;
       console.log(colors[3]);
@@ -107,7 +107,7 @@ tags: [javascript]
       > 栈是一种LIFO(last-in-first-out后进先出)的数据结构,也就是最新添加的项最早被移除.而栈中项的插入(叫做推入push)和移除(叫做弹出pop),只发生在栈的顶部.
       > push()方法可以接收任意数量的参数,把它们逐个添加到数组末尾,并返回修改后数组的长度,而pop()方法则从数组末尾移除最后一项,减少数组的length值,然后返回移除的项.
 
-    ```
+    ```js
       var colors = new Array();
       var count = colors.push("red","green");
       console.log(count);   //2
@@ -118,9 +118,10 @@ tags: [javascript]
       console.log(item);    //"black"
       console.log(colors.length);   //2
     ```
+    
       > 队列数据结构的访问规则是FIFO(first-in-first-out,先进先出),队列在列表的末端添加项,从列表的前端移除项.用shift()移除数组中的第一个项并返回该项,同时数组长度减1; 从数组末端添加项任然用push();
 
-    ```
+    ```js
       var colors = new Array();
       var count = colors.push("red","green");
       console.log(count);  //2
@@ -142,9 +143,9 @@ tags: [javascript]
      > RegExp类型是ECMAScript支持正则表达式的一个接口,提供了最基本的和一些高级的正则表达式.
 
 
-6. 基本包装类型
+5. 基本包装类型
 
-7. 内置对象
+6. 内置对象
     * Global对象
 
     * Math对象
