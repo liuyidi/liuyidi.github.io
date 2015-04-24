@@ -99,9 +99,13 @@
 
 /* standard */
 .post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .post ul, .post ol {

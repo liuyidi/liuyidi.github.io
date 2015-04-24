@@ -156,9 +156,13 @@ iframe{
 
 /* 块/段落引用 */
 blockquote {
- border-left: 1px solid #ccc;
-  margin: 0 0 20px 0px;
-  padding: 10px 15px;
+  position:relative;
+  color: #999;
+  font-weight:300;
+  font-family:Avenir, 'Helvetica Neue', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif;
+  border-left:1px solid #1abc9c;
+  padding-left:1em;
+  margin:1em 3em 1em 2em;
 }
 
 @media only screen and ( max-width:640px ){
@@ -215,11 +219,12 @@ pre, code, pre tt{
 }
 
 pre{
-  background:#f8f8f8;
-  border:1px solid #ddd;
-  padding:1em 1.5em;
-  display:block;
-  -webkit-overflow-scrolling: touch;
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
 }
 
 /* */
