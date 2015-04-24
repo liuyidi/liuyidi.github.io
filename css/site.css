@@ -24,9 +24,15 @@
 /* Site
 /*
 /*****************************************************************************/
+.main{
+  background: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  padding: 20px;
+}
 
 .site {
-  font-size: 115%;
+  font-size: 75%;
   text-align: justify;
   width: 42em;
   margin: 3em auto 2em;
@@ -96,7 +102,9 @@
 /* Posts
 /*
 /*****************************************************************************/
-
+.post{
+  margin-top: 20px;
+}
 /* standard */
 .post pre {
   padding: 16px;

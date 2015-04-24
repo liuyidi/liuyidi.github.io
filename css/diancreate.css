@@ -13,7 +13,7 @@
  */
 html{
   	color:#333;
-  	background-color: #fff;
+  	background-color: #eee;
   	-webkit-text-size-adjust:100%;  /* 1 */
   	-ms-text-size-adjust:100%;
   	text-rendering:optimizelegibility;
@@ -259,28 +259,21 @@ li ul,ul ul,ol ul{
 
 /* -------------------------------定义文本,字体大小和链接Links -------------------------- */
 
-a{ color:#840000; text-decoration:none;}
+a{ color:#1abc9c; text-decoration:none;}
 a:hover{ color:#555; text-decoration:underline; border-bottom-color:#555;}
 
 small{font-size:0.9em;color:#888;}
 strong, b{font-weight:bold;color:#000;}
 
-h1 {
-  font-size: 28px;
-  line-height: 64px;
+h1,h2,h3,h4,h5,h6{
+  margin-bottom: 0.4em;  /* 16*0.4=6.4px */
+  line-height: 1.5em;
 }
-
-h2 {
-  font-size: 22px;
-  line-height: 48px;
-}
-
-h3 {
-  font-size: 18px;
-  line-height: 32px;
-}
-
-h4,h5{font-size: 16px;line-height: 26px; }
+h1{font-size: 2em;} 
+h2{font-size: 1.8em;}
+h3{font-size: 1.6em;}
+h4{font-size: 1.4em;}
+h5,h6{font-size: 1.2em;}
 
 p{font-size: 1em; line-height: 1.8em;}
 
