@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Loan Calculator</title>
+	<style>
+        .output {font-weight: bold;}
+        #payment{text-decoration: underline;}
+        #graph {border: #000 1px solid;}
+        th,td{vertical-align: top;}
+	</style>
+</head>
+<body>
+	<!--
+    以此为目的，搭建一个学分计算器.即科目种类,每个科目的分数,每个科目的学分,总学分数,绩点
+    * 单个科目的不同分数对绩点的影响。
+    -->
+	<table>
+		<tr>
+			<th>Enter Loan Data:</th>
+			<td></td>
+			<th>Loan Balance, Cumulative Equity, and Interest Payments</th>
+		</tr>
+		<tr>
+			<td>借款总额 ($):</td>
+			<td><input type="text" id="amount" onchange="calculate();"></td>
+			<td rowspan=8><canvas id="graph" width="400" height="250"></canvas></td>
+		</tr>
+		<tr>
+			<td>还款利率 (%):</td>
+			<td><input type="text" id="apr" onchange="calculate();"></td>
+		</tr>
+		<tr>
+			<td>偿还期限 (years):</td>
+			<td><input type="text" id="years" onchange="calculate();"></td>
+		</tr>
+		<tr>
+			<td>邮政编码</td>
+			<td><input type="text" id="zipcode" onchange="caluculate();"></td>
+		</tr>
+		<tr>
+			<th>近似计算</th>
+			<td><button onclick="calculate();">计算</button></td>
+		</tr>
+		<tr>
+			<td>月付</td>
+			<td><span class="output" id="payment"></span></td>
+		</tr>
+		<tr>
+			<td>总共需付</td>
+			<td><span class="output" id="total"></span></td>
+		</tr>
+		<tr>
+			<td>总共利息</td>
+			<td><span class="output" id="totalinterest"></span></td>
+		</tr>
+		<tr>
+			<th>Sponsors:</th>
+			<td colspan=2>
+				Apply for your loan
+				<div id="lenders"></div>
+			</td>
+		</tr>
+
+	</table>
+	<script type="text/Javascript" src="demo.js"></script>
+</body>
+</html>

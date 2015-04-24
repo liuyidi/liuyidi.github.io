@@ -12,20 +12,20 @@
  *3.ie系统
  */
 html{
-	color:#333;
-	background-color: #fff;
-	-webkit-text-size-adjust:100%;  /* 1 */
-	-ms-text-size-adjust:100%;
-	text-rendering:optimizelegibility;
-	-moz-osx-font-smoothing:grayscale; /* 2 */
-	-webkit-font-smoothing:grayscale;
-}
+  	color:#333;
+  	background-color: #fff;
+  	-webkit-text-size-adjust:100%;  /* 1 */
+  	-ms-text-size-adjust:100%;
+  	text-rendering:optimizelegibility;
+  	-moz-osx-font-smoothing:grayscale; /* 2 */
+  	-webkit-font-smoothing:grayscale;
+  }
 
 /*项目仅仅支持IE9+ | Chrome | firefox等,推荐在html中加入.borderbox*/
 html.borderbox *, html.borderbox *:before, html.borderbox *:after {
-  -moz-box-sizing:border-box; /* 2 */
-  -webkit-box-sizing:border-box; /* 1 */
-  box-sizing:border-box;
+   -moz-box-sizing:border-box; /* 2 */
+   -webkit-box-sizing:border-box; /* 1 */
+   box-sizing:border-box;
 }
 
 /* 内外边距通常让各个浏览器样式的表现位置不同  类似于YUI*/
@@ -54,7 +54,7 @@ audio, canvas, video{
  *设置行高为1.8倍,也就是16*1.8=28.8px,1.8em
  */
 body, button, input, select, textarea{
-  font:400 1em/1.8 Avenir, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  font:400 16px/1.8 Avenir, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
 }
 
 /* ---------------------------------定义表单Forms----------------------------------- */
@@ -156,13 +156,9 @@ iframe{
 
 /* 块/段落引用 */
 blockquote {
-  position:relative;
-  color: #999;
-  font-weight:300;
-  font-family:Avenir, 'Helvetica Neue', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif;
-  border-left:1px solid #1abc9c;
-  padding-left:1em;
-  margin:1em 3em 1em 2em;
+ border-left: 1px solid #ccc;
+  margin: 0 0 20px 0px;
+  padding: 10px 15px;
 }
 
 @media only screen and ( max-width:640px ){
@@ -258,23 +254,30 @@ li ul,ul ul,ol ul{
 
 /* -------------------------------定义文本,字体大小和链接Links -------------------------- */
 
-a{ color:#1abc9c; text-decoration:none;}
+a{ color:#840000; text-decoration:none;}
 a:hover{ color:#555; text-decoration:underline; border-bottom-color:#555;}
 
 small{font-size:0.9em;color:#888;}
 strong, b{font-weight:bold;color:#000;}
 
-h1,h2,h3,h4,h5,h6{
-	margin-bottom: 0.4em;  /* 16*0.4=6.4px */
-	line-height: 1.5;
+h1 {
+  font-size: 28px;
+  line-height: 64px;
 }
-h1{font-size: 2em;} 
-h2{font-size: 1.8em;}
-h3{font-size: 1.6em;}
-h4{font-size: 1.4em;}
-h5,h6{font-size: 1.2em;}
 
-p{}
+h2 {
+  font-size: 22px;
+  line-height: 48px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+h4,h5{font-size: 16px;line-height: 26px; }
+
+p{font-size: 1em; line-height: 1.8em;}
 
 /* 文本高亮选中 */
 ::-moz-selection{

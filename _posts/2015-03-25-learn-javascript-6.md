@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "javascript基础学习之作用域&执行环境"
+title: "javascript基础学习之作用域与闭包&执行环境"
 date: 2015-03-25 12:20
 categories: [javascript]
 tags: [javascript]
@@ -13,3 +13,31 @@ tags: [javascript]
  * 全局环境只能访问在全局环境中定义的变量和函数,而不能直接访问局部环境中的任何数据;
  * 变量的执行环境有助于确定应该何时释放内存;
 
+####作用域
+1.变量声明提前
+```
+var scope = "global";
+function test(){
+	console.log(scope);   //undefined
+	var scope = "local";
+	console.log(scope);   //local
+}
+等价于
+var scope = "global";
+function test(){
+	var scope;
+	console.log(scope);  //undefined
+	scope = "local";
+	console.log(scope);  //local
+}
+*******************************
+var scope="global";
+function scopeTest(){
+    console.log(scope);
+}
+scopeTest();            //global  函数内部未声明变量时使用全局变量
+```
+2.全局变量优先级低于局部变量,javascript中没有块级作用域
+
+> 解析器将当前作用域内声明的所有变量和函数都会放到作用域的开始处，但是,只有变量的声明被提前到作用域的开始处了，而赋值操作被保留在原处。
+作为最佳实践：变量声明一定要放在作用域/函数的最上方（JavaScript 只有函数作用域！）。
