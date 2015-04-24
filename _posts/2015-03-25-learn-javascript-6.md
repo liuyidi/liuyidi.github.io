@@ -23,7 +23,7 @@ function test(){
 	var scope = "local";
 	console.log(scope);   //local
 }
-等价于
+//等价于
 var scope = "global";
 function test(){
 	var scope;
