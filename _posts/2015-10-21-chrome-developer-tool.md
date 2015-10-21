@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "WebStorm前端开发利器"
+title: "Chrome开发者调试工具详解"
 date: 2015-10-09 17:50
-categories: [webstorm]
-tags: [webstorm,tools]
+categories: [chrome]
+tags: [chrome,tools]
 ---
+
+###Chrome Developer Tool
