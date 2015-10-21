@@ -24,7 +24,7 @@ tags: [chrome,tools]
 3. Step into(快捷键F11): 碰到函数调用,会进入到被调用的函数中去。
 4. Step out(快捷键Shift+F11): 用于快速跳出当前函数,返回到被调用的当前函数的父级上下文中。
 5. Deactivate breakpoints: 停止所有的断点
-6. 
+6. pause on exceptions: 暂停断点
 #####Sources面板中的调试功能说明:
 
 - Watch
