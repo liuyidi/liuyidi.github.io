@@ -83,6 +83,9 @@ git删除远程分支 如果一不小心把本地的临时分支dev push到serve
 	
 	`$ git merge origin/master`
 
+12. 要取消git add .操作，需要执行`git rm －r --cached .`
+
+13. git .gitignore
 
 ####github和gitlab配置SSH
 - 1.在配置SSH的第一步，需要通过一下命令行生成ssh key
