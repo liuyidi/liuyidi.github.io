@@ -10,5 +10,13 @@ tags: [tools]
 
 ####Sublime Text2的各种插件
 － emmet
+
 － jquery
+
 － git
+
+－ DocBlockr 
+     
+     生成注释
+     
+[link](http://www.xuanfengge.com/practical-collection-of-sublime-plug-in.html)
