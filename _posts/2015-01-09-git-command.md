@@ -3,7 +3,7 @@ layout: post
 title: "git-command"
 date: 2015-01-09 14:20
 categories: [Git]
-tags: [git,github,gitlab,tools]
+tags: [git,tools]
 ---
 
 ###Git学习指南

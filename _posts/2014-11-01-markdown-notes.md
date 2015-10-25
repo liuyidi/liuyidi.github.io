@@ -3,7 +3,7 @@ layout: post
 title: "Markdown学习笔记"
 date: 2014-11-01 20:20
 categories: [markdown]
-tags: [markdown,tools]
+tags: [tools]
 ---
 
 #####一、Submit Text2中Markdown的安装
