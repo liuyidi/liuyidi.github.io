@@ -32,7 +32,6 @@
 }
 
 .site {
-  font-size: 115%;
   text-align: justify;
   width: 42em;
   margin: 1em auto 1em;
@@ -150,3 +149,7 @@ pre code span.lineno {
 .post pre.terminal code {
   background-color: #333;
 }
+
+/***********tags**********/
+.tags-span{background:#474949; border-radius:5px; color:#fff; padding:5px; margin:5px; display:inline-block; text-align:center; }
+.tags-span i{display:inline-block; font-size:normal;}
