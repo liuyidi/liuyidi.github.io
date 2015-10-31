@@ -36,7 +36,7 @@ tags: [jquery,business]
 
 - 2.4 瀑布流布局jquery.flexImage.js
 
-	```
+	```js
 	function waterFull(){
 
 	}
@@ -45,8 +45,8 @@ tags: [jquery,business]
 - 2.5 滚动加载更多
 
 	> 滚动距离＋window高度 > 页面高度
-
-	
+    
+    ```js
 	$(this).scrollTop() + $(window).height() + 200 >= $(document).height() 
     && 
 	$(this).scrollTop() > 200
@@ -55,6 +55,6 @@ tags: [jquery,business]
 	function LoadMore(){
 
 	}
-	
+	```
 
 三、优化和注意事项
