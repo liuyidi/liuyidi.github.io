@@ -17,16 +17,6 @@
 - 个人书柜
 - 个人兴趣
 - 技术学习资源
-  - ###git Linux
-  - [Git学习](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
-  - [markdown学习](http://wowubuntu.com/markdown/index.html)
-  - [memcache学习](http://www.ccvita.com/259.html)
-  - [Linux Shell&Vim学习]( )
-  
-  - ###github learning resource
-  - [git使用简易指南](http://www.bootcss.com/p/git-guide/)
-  - [图解Git](http://marklodato.github.io/visual-git-guide/index-zh-cn.html)
-  - [Git使用的简单汇总](http://blog.csdn.net/richardysteven/article/details/5956854)
 
 
-这就是伟大的liuyidi的世界。哈哈哈~
+
