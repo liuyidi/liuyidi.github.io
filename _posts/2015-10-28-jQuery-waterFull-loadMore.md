@@ -24,13 +24,13 @@ tags: [jquery,business]
     
 - 2.2 Ajax加载数据
     
-	```js
-    	$.getJson();
-	```
+    ```js
+    $.getJson();
+    ```
         
 - 2.3 插入数据 
 	
-	```js
+    ```js
     $.each({ });
     ```
 
