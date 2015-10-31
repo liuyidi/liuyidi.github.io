@@ -17,6 +17,7 @@
 - 个人书柜
 - 个人兴趣
 - 技术学习资源
+    [http://tangram.baidu.com/BaiduTemplate/]
 
 
 
