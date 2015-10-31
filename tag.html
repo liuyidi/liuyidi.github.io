@@ -6,13 +6,13 @@ date: 2015-02-01 02:00
 
 <div class="tags">
 {% for tag in site.tags %}
-<span class="tags-span">{{ tag | first }}<i>({{ tag | last | size }})&nbsp;&nbsp;</i></span>
+<a href="/#{{ tag | first}}{{tag | last}}" class="tags-span">{{ tag | first }}<i>({{ tag | last | size }})&nbsp;&nbsp;</i></a>
 {% endfor %}
 </div>
 
 {% for tag in site.tags %}
 
-<h5>{{ tag | first }}&nbsp;&nbsp;&nbsp;&nbsp;(共{{ tag | last | size }}篇文章)</h5>
+<h5 id="#{{ tag | first}}{{tag | last}}">{{ tag | first }}&nbsp;&nbsp;&nbsp;&nbsp;(共{{ tag | last | size }}篇文章)</h5>
 
 <ul>
 
