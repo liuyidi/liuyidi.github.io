@@ -44,7 +44,7 @@ tags: [jquery,business]
 
 - 2.5 滚动加载更多
 
-> 滚动距离＋window高度 > 页面高度
+	> 滚动距离＋window高度 > 页面高度
 
 	
 	$(this).scrollTop() + $(window).height() + 200 >= $(document).height() 
