@@ -17,3 +17,14 @@ tags: [jquery]
 4. [jquery.slimscroll.js](https://github.com/rochal/jQuery-slimScroll) jQuery滚动条插件
 
 5. [jquery.fullPage.js](https://github.com/alvarotrigo/fullPage.js)   全屏滚动插件
+
+6. [jQuery Lightbox]()
+
+
+
+
+
+
+> css3动画库
+
+1. [Animate.css](http://daneden.github.io/animate.css/)
