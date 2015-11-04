@@ -20,6 +20,10 @@ tags: [jquery]
 
 6. [jQuery Lightbox]()
 
+7. [jQuery facybox]()
+
+8. [jquery.lazyload.js]()    jQuery懒加载
+
 
 
 
