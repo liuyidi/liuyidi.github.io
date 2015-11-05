@@ -22,7 +22,7 @@ git删除远程分支 如果一不小心把本地的临时分支dev push到serve
 
 	`$ git branch -a`
 
-	```git
+	```
 	*dev
 	master
 	
