@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "git-command"
+title: "Git学习指南"
 date: 2015-01-09 14:20
 categories: [Git]
 tags: [git,tools]
 ---
-
-###Git学习指南
+> 
+###Git的常用命令行
 	
 git删除远程分支 如果一不小心把本地的临时分支dev push到server上去了,想要删除, 一开始用
 
@@ -17,7 +17,7 @@ git删除远程分支 如果一不小心把本地的临时分支dev push到serve
         
 冒号前面的空格不能少,原理是把一个空分支push到server上去,相当于删除该分支.
 
-####多人协作的Git
+###多人协作的Git
 1. 查看远程分支
 
 	`$ git branch -a`
