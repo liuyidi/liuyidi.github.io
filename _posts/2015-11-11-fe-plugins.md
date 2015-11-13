@@ -33,6 +33,7 @@ tags: [jquery]
 + 动效类
     1. [jquery.easing.js](https://github.com/gdsmith/jquery.easing)   jQuery动画插件
     2. [jquery.fullPage.js](https://github.com/alvarotrigo/fullPage.js)   全屏滚动插件
+        - 2.1 [Page Scroll Effects](https://codyhouse.co/demo/page-scroll-effects/opacity-hijacking.html) 不同翻页效果的全屏滚动插件
     3. [jquery.smoothState.js](https://github.com/miguel-perez/smoothState.js) 让多页面跳转更加流畅
     4. [jquery.multiscroll.js](https://github.com/alvarotrigo/multiscroll.js) 每个页面有两个滚动方向的全屏滚动
     5. [scrollme](https://github.com/nckprsn/scrollme) 每个页面都有进入特效的滚动插件
@@ -109,16 +110,20 @@ tags: [jquery]
 
 > js动效库
 
-+ [particles](https://github.com/VincentGarreau/particles.js) 实现点连接的背景效果
-+ [parallax](https://github.com/wagerfield/parallax) 视差滚动效果
-+ [scrollmagic](http://scrollmagic.io/) 视差滚动效果
-+ [smartcrop](https://github.com/jwagner/smartcrop.js) 能自动识别图片中的人物进行裁减
-+ [Highlight.js](https://github.com/isagalaev/highlight.js) 代码高亮插件 (已使用在本博客)
-+ [intro.js](http://usablica.github.io/intro.js/) 网站引导介绍
+- 图片动效
+    + [particles](https://github.com/VincentGarreau/particles.js) 实现点连接的背景效果
+    + [parallax](https://github.com/wagerfield/parallax) 视差滚动效果
+    + [scrollmagic](http://scrollmagic.io/) 视差滚动效果
+    + [smartcrop](https://github.com/jwagner/smartcrop.js) 能自动识别图片中的人物进行裁减
+    + [Highlight.js](https://github.com/isagalaev/highlight.js) 代码高亮插件 (已使用在本博客)
+    + [intro.js](http://usablica.github.io/intro.js/) 网站引导介绍
+－ 数字动效
+    + [countUp.js](https://github.com/inorganik/CountUp.js)      让数字以非常有趣的动画方式显示
+
 - 数据可视化
     1. D3.js
     2. Highcharts
     3. [Chart.js]()
-
+    
 - 辅助类
     1. Responed.js    让IE6-8都支持CSS3 Media Query
