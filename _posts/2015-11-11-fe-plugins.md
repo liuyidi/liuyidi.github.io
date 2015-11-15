@@ -7,6 +7,9 @@ tags: [jquery]
 ---
 > [参考资料](https://github.com/JingwenTian/awesome-frontend)
 
+
+###JQuery插件
+
 > 工作中经常用到的jQuery插件
     
 + 文本类
@@ -99,14 +102,19 @@ tags: [jquery]
     5. [jQuery Seat Charts](https://github.com/mateuszmarkowski/jQuery-Seat-Charts) 电影院选择座位
     6. [jquery.qrcode.js]()  生成二维码的 jQuery 插件
 
+###CSS3动效
 
 > css3动画库
 
 1. [Animate.css](http://daneden.github.io/animate.css/) CSS3动画库
 2. [animsition](http://git.blivesta.com/animsition/)   CSS3页面转场动画库
 3. [spinners](http://www.css-spinners.com/) CSS3加载动画
-4. [hover](http://ianlunn.github.io/Hover/) CSS3鼠标hover时候的动效
-5. [css3鼠标悬停图片效果](http://demo.jb51.net/js/2014/css3-mouse-xt-images-wzdh/index2.html)
+4. [loaders](https://github.com/ConnorAtherton/loaders.css)  CSS3加载更多动画
+5. [hover](http://ianlunn.github.io/Hover/) CSS3鼠标hover时候的动效
+6. [css3鼠标悬停图片效果](http://demo.jb51.net/js/2014/css3-mouse-xt-images-wzdh/index2.html)
+
+
+###Javascript插件
 
 > js动效库
 
@@ -124,6 +132,8 @@ tags: [jquery]
     1. D3.js
     2. Highcharts
     3. [Chart.js]()
-    
+  
+- JSON类
+    1. [mockjs](http://mockjs.com/) 模拟生成json数据
 - 辅助类
     1. Responed.js    让IE6-8都支持CSS3 Media Query
