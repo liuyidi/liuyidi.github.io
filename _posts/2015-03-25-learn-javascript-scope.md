@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "javascript基础学习之作用域与闭包&执行环境"
+title: "javascript基础学习系列之作用域&执行环境"
 date: 2015-03-25 12:20
 categories: [javascript]
 tags: [javascript]

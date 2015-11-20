@@ -41,13 +41,15 @@ tags: [jquery]
     4. [jquery.multiscroll.js](https://github.com/alvarotrigo/multiscroll.js) 每个页面有两个滚动方向的全屏滚动
     5. [scrollme](https://github.com/nckprsn/scrollme) 每个页面都有进入特效的滚动插件
     6. **[jQuery-One-Page-Nav](https://github.com/davist11/jQuery-One-Page-Nav)** jquery侧边滚动导航( *简历库项目中使用* )
-
+    7. [transition](https://github.com/louisremi/jquery.transition.js/)   过渡效果
+    
 + 鼠标类
     1. [jquery.mouseWheel.js](https://github.com/jquery/jquery-mousewheel) 鼠标滚轮滚动插件
     2. [jquery-smooth-scroll](https://github.com/kswedberg/jquery-smooth-scroll)  jquery平滑滚动插件
     3. [animatescroll](https://github.com/ramswaroop/animatescroll.js)  jquery动画滚动插件
     4. [jsscroll](https://github.com/pklauzinski/jscroll) 滚动加载更多(more)
-
++ 滚动(鼠标＋动效)类
+    1. [jquery-scrollspy](https://github.com/sxalexander/jquery-scrollspy/blob/master/jquery-scrollspy.js)   滚动监听  
 + 键盘类
 
 
@@ -113,6 +115,8 @@ tags: [jquery]
 5. [hover](http://ianlunn.github.io/Hover/) CSS3鼠标hover时候的动效
 6. [css3鼠标悬停图片效果](http://demo.jb51.net/js/2014/css3-mouse-xt-images-wzdh/index2.html)
 
+###移动端插件
+1. [Swiper](http://www.idangero.us/swiper/demos/#.Vkl4m98rLow) Most Modern Mobile Touch Slider
 
 ###Javascript插件
 
