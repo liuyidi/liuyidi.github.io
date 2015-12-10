@@ -5,67 +5,23 @@ date: 2015-01-09 14:20
 categories: [Git]
 tags: [git,tools]
 ---
-> 
+> 参考资料: [Git Pro](https://git-scm.com/book/zh/v2/)
+
 ###Git的常用命令行
+
+
+
+1. 查看远程分支    `$ git branch -a`	
+2. 查看本地分支    `$ git branch`
+
+3. 创建分支       `$ git branch test`
+4. 切换分支       `$ git checkout master`
 	
-git删除远程分支 如果一不小心把本地的临时分支dev push到server上去了,想要删除, 一开始用
-
-`git branch -r -d origin/dev`
-
-不成功, 发现只是删除了本地对应该远程分支的track,那么正确的方式是:
-`git push origin :dev`
-        
-冒号前面的空格不能少,原理是把一个空分支push到server上去,相当于删除该分支.
-
-###多人协作的Git
-1. 查看远程分支
-
-	`$ git branch -a`
-
-	```
-	*dev
-	master
+5. 删除分支       `$ git branch -d test`
+6. 删除远程分支    `$ git push origin :test`
 	
-	remotes/origin/HEAD -> origin/master
-	remotes/origin/dev 
-	remotes/orgin/master
-	```
-	
-2. 查看本地分支
-
-	`$ git branch`
-	
-	```
-	*dev
-	 master
-	```
-3. 创建分支
-
-	`$ git branch test`
-	
-	```
-	*test
-	master
-	dev
-	```
-4. 切换分支
-	
-	`$ git checkout`
-	
-5. 删除分支
-	
-	`$ git branch -d test`
-6. 删除远程分支
-
-	`$ git push origin :test`
-	
-7. 推送本地分支到远程
-
-	`$ git push origin dev:master`
-
-8. 查看远程仓库
-
-	`$ git remote -v`
+7. 推送本地分支到远程   `$ git push origin dev:dev`
+8. 查看远程仓库        `$ git remote -v`
 	
 9. 从远程获取最新版本到本地
 	
@@ -83,24 +39,47 @@ git删除远程分支 如果一不小心把本地的临时分支dev push到serve
 	
 	`$ git merge origin/master`
 
-12. 要取消git add .操作，需要执行`git rm －r --cached .`
-
+12. 要取消git add .操作，需要执行
 13. 要撤销git commit操作,需要运行`--amend`,
-    ```
-    $ git commit -m "init commit"
-    $ git add xxx.md
-    $ git commit --amend
-    ```
-    上面三个命令最终只会产生一个提交.
+    
 
-14. 取消暂存的文件
-    ```
-    git reset HEAD xxx.md                                                                                                                                                                                                                                                                  bbbbbbbbbbbbbbbbb n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-    ```
+15. **[必须]**添加.gitignore到git项目目录中去,可以忽略很多不用提交的文件
 
-15. 添加.gitignore到git项目目录中去,可以忽略很多不用提交的文件
+###第二部分: Git常见的错误解决方案
+1. git add本地错误文件到暂缓区
 
-####github和gitlab配置SSH
+    > 解决办法：执行`git reset HEAD filename`,可以取消暂存
+    
+2. 使用`git checkout -- filename` 可以撤销对文件的修改
+   
+3. git commit提交信息写错了或者遗漏了需要添加的文件
+    
+    > 解决办法：单纯执行`git commit --amend` 可以解决提交信息错误,
+      [在没有push到远程或者其他的改变之前]添加新的提交内容: 先执行`git add forgetfile`,
+      再执行`git commit --amend`：   
+      
+     ```
+       $ git commit -m "init commit"
+       $ git add xxx.md
+       $ git commit --amend
+     ```
+   上面三个命令最终只会产生一个提交.
+
+4. git commit提交错误文件到本地仓库(HEAD)中
+    > 先执行 `git reset --hard <commit log>`可以回滚到commit的某一步,其中
+      `git log`可以查看log日志。
+      再执行`git push origin HEAD --force`
+    
+5. git删除远程分支 
+> 如果一不小心把本地的临时分支dev push到server上去了,想要删除, 一开始用
+`git branch -r -d origin/dev`不成功, 发现只是删除了本地对应该远程分支的track,那么正确的方式是:
+`git push origin :dev`冒号前面的空格不能少,原理是把一个空分支push到server上去,相当于删除该分支.
+
+
+
+###第三部分：多人协作的Git
+
+###第四部分: github和gitlab配置SSH
 - 1.在配置SSH的第一步，需要通过一下命令行生成ssh key
 
 	`ssh-keygen -t rsa -C "xxxxxx@email.com`
@@ -111,19 +90,18 @@ git删除远程分支 如果一不小心把本地的临时分支dev push到serve
 
 - 3.在config中建一个config文件，添加内容如下：
 
-```
-	# gitlab
+
+    # gitlab
 	Host gitlab.com
     	HostName gitlab.com
     	PreferredAuthentications publickey
     	IdentityFile ~/.ssh/id_rsa
 
-	# github	
+    # github	
 	Host github.com
     	HostName github.com
     	PreferredAuthentications publickey
     	IdentityFile ~/.ssh/id_rsa_github
 
-```
 
 

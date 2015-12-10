@@ -32,7 +32,8 @@ tags: [jquery]
         2. []() 表单填写进度提示
     - 单(复)选框
         1. [iCheck](https://github.com/fronteed/iCheck/) 改变表单的常用样式
-
++ 表格类
+    1. [DataTables](https://github.com/DataTables/DataTables/blob/master/media/js/dataTables.jqueryui.js)  表格排序jquery
 + 动效类
     1. [jquery.easing.js](https://github.com/gdsmith/jquery.easing)   jQuery动画插件
     2. [jquery.fullPage.js](https://github.com/alvarotrigo/fullPage.js)   全屏滚动插件
@@ -80,6 +81,7 @@ tags: [jquery]
         3. 
 + 弹框类
     1. [simplemodal](https://github.com/ericmmartin/simplemodal)
+    2. [css modal](http://tympanus.net/Development/ModalWindowEffects/)
 
 + 进度条类
     1. [nprogress](https://github.com/rstacruz/nprogress/)  随着网页加载顶部进度条增长
@@ -92,6 +94,7 @@ tags: [jquery]
 
 + 日历类
     1. [datepicker](http://api.jqueryui.com/datepicker/)  日历选择控件
+    2. [Pikaday](https://github.com/dbushell/Pikaday)  日历选择控件
 + 城市列表选择类
     1. [cityPicker](http://www.jq22.com/yanshi4661)  简洁版城市选择
 + 分页类
@@ -114,9 +117,26 @@ tags: [jquery]
 4. [loaders](https://github.com/ConnorAtherton/loaders.css)  CSS3加载更多动画
 5. [hover](http://ianlunn.github.io/Hover/) CSS3鼠标hover时候的动效
 6. [css3鼠标悬停图片效果](http://demo.jb51.net/js/2014/css3-mouse-xt-images-wzdh/index2.html)
-
+7. [css Icon hover](http://tympanus.net/Development/IconHoverEffects/)  CSS3 Icon hover动态效果
+    - 7.0 [Img hover](http://tympanus.net/Tutorials/OriginalHoverEffects/index.html) Img hover 1
+    - 7.1 [hover](http://www.ghugo.com/wp-content/uploads/2013/07/css3.html) 商品列表hover动画
+    - 7.2 [hover](http://tympanus.net/Tutorials/ResponsiveRetinaReadyMenu/#) hover nav
+    - 7.3 [hover](http://dinolatoga.com/demo/webkit-image-hover-effects/) Img hover 2
+    - 7.4 [Img hover](http://tympanus.net/Tutorials/PseudoElementsImageCaptions/) Img hover 3
+    - 7.5 [Product hover](http://tympanus.net/Tutorials/CaptionHoverEffects/index3.html) Product hover
+    - 7.6 [Button hover](http://tympanus.net/Development/CreativeButtons/) Button hover
+        - [Submit hover](http://lab.hakim.se/ladda/) submit hover
+    - 7.7 [Progress hover](http://tympanus.net/Development/ProgressButtonStyles/) Progress hover
+    - 7.8 [A hover](http://tympanus.net/Development/CreativeLinkEffects/) A hover
+    - 7.9 [loading hover](http://tympanus.net/Development/CreativeLoadingEffects/) loading hover
+    
 ###移动端插件
 1. [Swiper](http://www.idangero.us/swiper/demos/#.Vkl4m98rLow) Most Modern Mobile Touch Slider
+2. [zepto.js]()
+3. [Hammer.js]()    手势
+4. [velocity.js]()  高级动画
+5. [isscroll.js]()   局部滚动
+
 
 ###Javascript插件
 
@@ -141,3 +161,5 @@ tags: [jquery]
     1. [mockjs](http://mockjs.com/) 模拟生成json数据
 - 辅助类
     1. Responed.js    让IE6-8都支持CSS3 Media Query
+- MarkDown解析类
+    1. [HyperDown](https://github.com/SegmentFault/HyperDown.js) sf 
