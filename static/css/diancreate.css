@@ -276,7 +276,8 @@ h3{font-size: 1.4em;}
 h4{font-size: 1.2em;}
 h5,h6{font-size: 1em;}
 
-p{font-size: 1em; line-height: 1.8em;}
+p{font-size: 1em; line-height: 1.8em;word-wrap: break-word;
+    word-break: break-all;}
 
 /* 文本高亮选中 */
 ::-moz-selection{
