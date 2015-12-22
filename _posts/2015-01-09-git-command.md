@@ -75,6 +75,9 @@ tags: [git,tools]
 `git branch -r -d origin/dev`不成功, 发现只是删除了本地对应该远程分支的track,那么正确的方式是:
 `git push origin :dev`冒号前面的空格不能少,原理是把一个空分支push到server上去,相当于删除该分支.
 
+6. git merge合并冲突
+    
+    > 使用`git reset --hard HEAD`撤销git merge操作
 
 
 ###第三部分：多人协作的Git
