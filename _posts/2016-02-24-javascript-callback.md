@@ -10,7 +10,9 @@ tags: [javascript]
 > [参考资料-javascript回调函数整理](https://segmentfault.com/a/1190000000657129)
 > 说明: 回调函数来自于一种著名的编程范式-函数式编程
 
-###回调的定义
+
+###回调的定义###
+
 
 > 在JavaScript中，回调函数具体的定义为：函数A作为参数(函数引用)传递到另一个函数B中，并且这个函数B执行函数A。
 > 我们就说函数A叫做回调函数。如果没有名称(函数表达式)，就叫做匿名回调函数。因此callback 不一定用于异步，
@@ -20,19 +22,19 @@ tags: [javascript]
 
 例子一
 ```
-var clientData = {
-    id: 091842,
-    fullName: "not set",
-    setUserName: function(firstName,lastName){
-        this.fullName = firstName+lastName;
+    var clientData = {
+        id: 091842,
+        fullName: "not set",
+        setUserName: function(firstName,lastName){
+            this.fullName = firstName+lastName;
+        }
     }
-}
-//callback为回调函数
-function getUserName(firstName,lastName,callback,callbackObj){
-    if(typeof callback === "function"){
-        callback.call(callbackObj,firstName,lastName);
+    //callback为回调函数
+    function getUserName(firstName,lastName,callback,callbackObj){
+        if(typeof callback === "function"){
+            callback.call(callbackObj,firstName,lastName);
+        }
     }
-}
 getUserName("liu","yidi",clientData.setUserName,clientData);
 console.log(clientData.fullName);
 ```
@@ -51,6 +53,7 @@ console.log(clientData.fullName);
 ```
 
 ###回调的使用场合
+
 - 资源加载
     - 动态加载js文件后执行回调
     - 加载iframe后执行回调
