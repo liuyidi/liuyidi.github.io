@@ -14,7 +14,8 @@ tags: [javascript]
   3. [Javascript高级程序设计]()
   4. [MDN Closure](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures)
   
-###一、什么是闭包？
+一、什么是闭包？
+---
    函数可以访问它被创建时所处的上下文环境,这被称为闭包,
    换句话说闭包中的函数可以记忆它被创建时候的环境。
        
@@ -42,11 +43,13 @@ tags: [javascript]
     }
    ```
   
-###二、闭包的常用场景
+二、闭包的常用场景
+---
   
   事件处理和闭包结合
 
-####常见错误一:在循环中创建闭包
+ 常见错误一:在循环中创建闭包
+ ----
   ```js
   //  常见错误一:在循环中创建闭包
   var addHandler = function(nodes){
