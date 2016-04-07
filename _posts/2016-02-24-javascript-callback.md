@@ -53,7 +53,8 @@ console.log(clientData.fullName);
  fun2(c,display);
 ```
 
-###回调的使用场合
+回调的使用场合
+---
 
 - 资源加载
     - 动态加载js文件后执行回调
