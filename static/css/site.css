@@ -152,4 +152,5 @@ pre code span.lineno {
 
 /***********tags**********/
 .tags-span{background:#474949; border-radius:5px; color:#fff; padding:5px; margin:5px; display:inline-block; text-align:center; }
+.tags-span:hover {background: #474949;color: #fff;    text-decoration: none;}
 .tags-span i{display:inline-block; font-style:normal;}

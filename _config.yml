@@ -1,3 +1,4 @@
 name: Liuyidi' s Notes
 markdown: kramdown
 pygments: true
+toc_levels: 2..3
