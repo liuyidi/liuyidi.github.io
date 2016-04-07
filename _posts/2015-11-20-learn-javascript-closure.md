@@ -48,8 +48,9 @@ tags: [javascript]
   
   事件处理和闭包结合
 
- 常见错误一:在循环中创建闭包
- ----
+常见错误一:在循环中创建闭包
+------
+ 
   ```js
   //  常见错误一:在循环中创建闭包
   var addHandler = function(nodes){
