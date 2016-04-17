@@ -6,7 +6,7 @@ categories: [markdown]
 tags: [tools]
 ---
 
-#####一、Submit Text2中Markdown的安装
+#### 一、Submit Text2中Markdown的安装
 
 1. 安装Package Control
    * 按Ctrl+\` 打开console
@@ -31,7 +31,7 @@ tags: [tools]
    * 此时就可以在浏览器里看到刚才编辑的文档了
 
 
-#####二、Markdown基础语法
+#### 二、Markdown基础语法
 
 - 使用" \*\* " 或 " \__ " 包裹文本产生strong效果: **强调**    __文本__
 - 使用" * "或 "_" 包裹文本产生**斜体**效果:  *斜体*      
