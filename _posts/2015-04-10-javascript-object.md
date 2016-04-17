@@ -48,7 +48,9 @@ tags: [javascript]
 
 #### 通过原型
 
-### 通过Object.create()
+##### prototype
+
+#### 通过Object.create()
 
 ### 对象属性的设置(set)
 
