@@ -32,7 +32,7 @@
                     menuContentEl.style.opacity = 1;
         		}
         		
-        	});
+        	},true);
         }
     };
 
