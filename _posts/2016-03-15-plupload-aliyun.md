@@ -6,8 +6,11 @@ categories: [javascript]
 tags: [javascript]
 ---
 
+### 前端上传文件
 
-### 几点问题:
+### 阿里云OSS
+
+### 几点问题总结:
 
 1. 上传到OSS前更换文件名
 
