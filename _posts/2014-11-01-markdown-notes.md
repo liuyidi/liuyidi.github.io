@@ -55,7 +55,8 @@ tags: [tools]
    > 一个惊叹号！
    > 接着一个方括号,里面放上图片的替代文字
    > 接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的’title’文字.
-* **链接**: 
-   > This is [an example](http://example.com/ "Title") inline link.
-   > 如果你是要链接到同样主机的资源，你可以使用相对路径：
-   > See my [About](/about/) page for details.
+
+* **链接**:
+
+    >    This is [an example](http://example.com/ "Title") inline link.
+         如果你是要链接到同样主机的资源，你可以使用相对路径：See my [About](/about/) page for details.
