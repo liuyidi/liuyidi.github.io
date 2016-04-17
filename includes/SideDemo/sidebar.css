@@ -7,7 +7,7 @@ ul{
 #sidebar{
 	width:35px;
 	background-color: #e1e1e1;
-	padding-top: 70px;
+	padding-top: 40px;
 	position: fixed;
 	min-height: 100%;
 	z-index:100 ;
@@ -18,7 +18,7 @@ ul{
 	font-family:'Microsoft Yahei';
 	text-align: center;
 	margin-top:8px;
-
+    cursor: pointer;
 }
 
 #sidespace{

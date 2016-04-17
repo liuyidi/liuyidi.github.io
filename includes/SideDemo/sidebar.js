@@ -2,7 +2,10 @@
 
 /*立即执行的模块*/
 (function(){
-	/*构造函数Menubar*/
+
+	/**
+     * 构造函数Menubar-对单个按钮
+     * */
 	var Menubar = function(){
     	this.el = document.querySelector('#sidebar ul');
     	this.state = 'allClosed';  //state=hasOpened
@@ -25,13 +28,19 @@
         			console.log('打开' + menuContentEl.id);
         			self.state = 'hasOpened';
         			self.currentOpendMenuContent = menuContentEl;
-                    menuContentEl.style.opacity = 0;
+                    document.getElementById(self.currentOpendMenuContent.id+'-content').style.opacity=0;
+                    menuContentEl.style.opacity = 1;
         		}
         		
         	});
         }
     };
-	/*构造函数Sidebar*/
+
+    var menubar = new Menubar();
+
+	/**
+     * 构造函数Sidebar-对整个侧边栏
+     * */
 	var Sidebar = function(eId,closeBarId){
 		/*先申明一个状态*/
 		this.state = 'opened';   
@@ -49,7 +58,7 @@
 			}
 		});
 	};
-	/*添加原型*/
+	/*添加原型方法*/
 	Sidebar.prototype.close = function() {
 		console.log('关闭sidebar');
 		this.el.className = 'sidebar-move-left';
