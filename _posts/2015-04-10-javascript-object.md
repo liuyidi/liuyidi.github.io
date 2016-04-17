@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "javascript学习之对象"
+title: "Javascript学习之对象"
 date: 2015-04-10 02:20
 categories: [javascript]
 tags: [javascript]
@@ -45,14 +45,21 @@ tags: [javascript]
 #### 对象属性的创建(create)
 
 ##### 对象直接量
+
 ##### 通过new创建对象
+
 ##### 通过原型
+
 ##### 通过Object.create()
 
 #### 对象属性的设置(set)
+
 #### 对象属性的查找(query)
+
 #### 对象属性的删除(delete)
+
 #### 对象属性的检测(test)
+
 #### 对象属性的枚举(enumerate)
 
 ### 对象的原型
