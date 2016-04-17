@@ -19,11 +19,13 @@
         			console.log('打开' + menuContentEl.id);
         			self.state = 'hasOpened';
         			self.currentOpendMenuContent = menuContentEl;
+                    menuContentEl.style.opacity = 1;
         		}else {
         			console.log('关闭'+ self.currentOpendMenuContent.id);
         			console.log('打开' + menuContentEl.id);
         			self.state = 'hasOpened';
         			self.currentOpendMenuContent = menuContentEl;
+                    menuContentEl.style.opacity = 0;
         		}
         		
         	});
