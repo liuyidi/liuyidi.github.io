@@ -48,13 +48,7 @@
   margin-bottom: 2em;
 }
 
-.title a {
-  
-}
-
-.title a:hover {
-  
-}
+.header-nav{display:inline-block; float:right; margin-top:6px;}
 
 .header a.extra {
   color: #aaa;
