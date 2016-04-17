@@ -5,16 +5,17 @@ date: 2015-01-30 12:30
 categories: [Redis]
 tags: [redis]
 ---
-##NoSQL 非关系数据库
+
+## NoSQL 非关系数据库
 - 以Key-Value形式存储{key1:value1,key2:value2},不一定遵守传统数据库的一些基本要求
 - 不支持ACID属性:事件回滚,没有常用的SQL操作,没有表结构
 - 用于对数据高并发读写,海量数据的高效率存储和访问,对数据的高可扩展性
 
-###Redis
+### Redis
 > 数据结构服务器,键包括string、hash、list（链表）、set(集合)、zset(有序集合)
   这些数据类型都支持push/pop、add/remove
 
-###Redis使用场合
+### Redis使用场合
 1.取最新N个数据的操作
 2.排行榜应用,取TOP N操作 
 3.需要精确定过期时间的应用
@@ -25,7 +26,7 @@ tags: [redis]
 8.构建队列系统 list
 9.缓存
 
-###Redis的安装与部署
+### Redis的安装与部署
 1.下载安装包: wget http://redis.googlecode.com/files/redis-2.4.17.tar.gz
 2.编译源程序: tar zxvf redis-1.4.17.tar.gz
   cd redis-1.4.17

@@ -5,7 +5,11 @@ date: 2015-10-09 17:50
 categories: [tools]
 tags: [tools]
 ---
-####工具篇
+
+*  目录
+{:toc}
+
+### 工具篇
 
 > 要学会善用工具
 

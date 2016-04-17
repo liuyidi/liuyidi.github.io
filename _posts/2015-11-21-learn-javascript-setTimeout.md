@@ -6,7 +6,11 @@ categories: [javascript]
 tags: [javascript]
 ---
 
-###setTimeout
+*  目录
+{:toc}
+
+
+### setTimeout
 
 1. setTimtout放在最后执行.
 ```js

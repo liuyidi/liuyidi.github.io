@@ -5,10 +5,12 @@ date: 2015-11-11 17:20
 categories: [plugins]
 tags: [jquery]
 ---
+*  目录
+{:toc}
+
 > [参考资料](https://github.com/JingwenTian/awesome-frontend)
 
-
-###JQuery插件
+### JQuery插件
 
 > 工作中经常用到的jQuery插件
     
@@ -107,7 +109,7 @@ tags: [jquery]
     5. [jQuery Seat Charts](https://github.com/mateuszmarkowski/jQuery-Seat-Charts) 电影院选择座位
     6. [jquery.qrcode.js]()  生成二维码的 jQuery 插件
 
-###CSS3动效
+### CSS3动效
 
 > css3动画库
 
@@ -130,7 +132,7 @@ tags: [jquery]
     - 7.8 [A hover](http://tympanus.net/Development/CreativeLinkEffects/) A hover
     - 7.9 [loading hover](http://tympanus.net/Development/CreativeLoadingEffects/) loading hover
     
-###移动端插件
+### 移动端插件
 1. [Swiper](http://www.idangero.us/swiper/demos/#.Vkl4m98rLow) Most Modern Mobile Touch Slider
 2. [zepto.js]()
 3. [Hammer.js]()    手势
@@ -138,7 +140,7 @@ tags: [jquery]
 5. [isscroll.js]()   局部滚动
 
 
-###Javascript插件
+### Javascript插件
 
 > js动效库
 

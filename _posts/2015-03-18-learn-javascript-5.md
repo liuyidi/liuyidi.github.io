@@ -6,10 +6,10 @@ categories: [javascript]
 tags: [javascript]
 ---
 
-####面向对象Object-oriented
+### 面向对象Object-oriented
 > ECMAScript中没有类的概念,ECMAScript中的对象可以被想象成散列表:无非就是一组名值对,其中值可以是数据或函数.每个对象都是基于一个引用类型创建的.
 
-#####一、创建对象
+#### 一、创建对象
 
    ```
    var person = new Object();

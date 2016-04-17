@@ -6,12 +6,15 @@ categories: [javascript]
 tags: [javascript]
 ---
 
+*  目录
+{:toc}
+
 > 浏览器兼容问题: 范围[IE8+,Chrome,Firefox,Opera,Safari],不考虑IE6,IE7
 
-###CSS部分
+### CSS部分
 
 
-###JavaScript部分
+### JavaScript部分
 
    - 1. jQuery的$.get方法获取xml文件 IE8不兼容
        - 原因:  IE从服务器获取XML数据,IE将xml数据作为String给解析了.

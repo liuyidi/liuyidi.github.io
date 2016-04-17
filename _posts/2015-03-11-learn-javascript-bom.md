@@ -6,9 +6,10 @@ categories: [javascript]
 tags: [javascript,BOM]
 ---
 
-##javascript基础学习二之BOM
+## javascript基础学习二之BOM
 
-###BOM
+### BOM
+
 > Brower Object Model 浏览器对象模型
 
 1. 弹出新浏览器窗口的功能;

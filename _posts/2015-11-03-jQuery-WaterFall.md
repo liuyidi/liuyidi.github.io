@@ -5,8 +5,10 @@ date: 2015-11-03 00:20
 categories: [jquery]
 tags: [jquery,business]
 ---
+*  目录
+{:toc}
 
-###jQuery瀑布流－面向对象写法
+### jQuery瀑布流－面向对象写法
 
 ```js
 (function($){

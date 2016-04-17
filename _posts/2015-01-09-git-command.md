@@ -5,11 +5,12 @@ date: 2015-01-09 14:20
 categories: [Git]
 tags: [git,tools]
 ---
+*  目录
+{:toc}
+
 > 参考资料: [Git Pro](https://git-scm.com/book/zh/v2/)
 
-###Git的常用命令行
-
-
+### Git的常用命令行
 
 1. 查看远程分支    `$ git branch -a`	
 2. 查看本地分支    `$ git branch`
@@ -45,7 +46,7 @@ tags: [git,tools]
 
 15. **[必须]**添加.gitignore到git项目目录中去,可以忽略很多不用提交的文件
 
-###第二部分: Git常见的错误解决方案
+### 第二部分: Git常见的错误解决方案
 1. git add本地错误文件到暂缓区
 
     > 解决办法：执行`git reset HEAD filename`,可以取消暂存
@@ -80,9 +81,9 @@ tags: [git,tools]
     > 使用`git reset --hard HEAD`撤销git merge操作
 
 
-###第三部分：多人协作的Git
+### 第三部分：多人协作的Git
 
-###第四部分: github和gitlab配置SSH
+### 第四部分: github和gitlab配置SSH
 - 1.在配置SSH的第一步，需要通过一下命令行生成ssh key
 
 	`ssh-keygen -t rsa -C "xxxxxx@email.com`
