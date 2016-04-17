@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Redis学习笔记一"
-date: 2015-01-30 12:30
+title:  "Redis学习笔记二"
+date: 2015-02-27 12:30
 categories: [Redis]
 tags: [redis]
 ---
