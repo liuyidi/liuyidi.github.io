@@ -107,13 +107,14 @@
 }
 
 #markdown-toc {
-    width: auto;
+    width: 260px;
     position: fixed;
-    top: 210px;
-    left: 20px;
+    top: 150px;
+    left: 30px;
     padding:20px 10px;
     list-style: none;
     background:#fff;
+    font-size:14px;
 }
 
 /* standard */
