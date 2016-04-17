@@ -6,9 +6,9 @@ categories: [submit text]
 tags: [tools]
 ---
 
-####Sublime Text2的包安装
+### Sublime Text2的包安装
 
-####Sublime Text2的各种插件
+### Sublime Text2的各种插件
 － emmet
 
 － jquery
@@ -17,6 +17,6 @@ tags: [tools]
 
 － DocBlockr 
      
-     生成注释
+－ 生成注释
      
 [link](http://www.xuanfengge.com/practical-collection-of-sublime-plug-in.html)
