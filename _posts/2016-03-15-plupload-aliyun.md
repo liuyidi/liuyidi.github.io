@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "plupload直接上传到阿里云OSS"
+title: "前端Plupload直传阿里云OSS"
 date: 2016-03-15 12:20
 categories: [javascript]
 tags: [javascript]
 ---
 
 
-#### 几点问题:
+### 几点问题:
 
 1. 上传到OSS前更换文件名
 
