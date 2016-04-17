@@ -28,7 +28,7 @@
         			console.log('打开' + menuContentEl.id);
         			self.state = 'hasOpened';
         			self.currentOpendMenuContent = menuContentEl;
-                    document.getElementById(self.currentOpendMenuContent.id+'-content').style.opacity=0;
+                    document.getElementById(self.currentOpendMenuContent.id).style.opacity=0;
                     menuContentEl.style.opacity = 1;
         		}
         		
