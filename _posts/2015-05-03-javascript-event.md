@@ -17,12 +17,13 @@ tags: [javascript]
 
 #### 2.1 HTML事件处理程序
     
-    ```
+    ```js
     <div onclick="alert('click')">点击</div>
     ``` 
+    
 #### 2.2 DOM0级事件处理程序
     
-    ```
+    ```js
     document.getElementById("btn").onclick = function(){
         alert("click");
     }
@@ -32,15 +33,15 @@ tags: [javascript]
 	定义了两个方法:用于处理指定和删除事件处理程序的操作: addEventListener() 和 removeEventListener()
 
 #### 2.4 IE事件处理程序
-		IE实现了与DOM中类似的两个方法: attachEvent()和detachEvent(),这两个方法接受相同的两个参数:事件处理程序名称与事件处理程序函数.
-
-			```
-			var btn = document.getElementById("myBtn");
-			btn.attachEvent("onclick", function(){   /*参数为onclick*/
-				alert("clicked");
-			});
-			```
-		detachEvent()也是用来移除相应的事件处理程序
+    IE实现了与DOM中类似的两个方法: attachEvent()和detachEvent(),这两个方法接受相同的两个参数:事件处理程序名称与事件处理程序函数.
+    
+	```js
+    var btn = document.getElementById("myBtn");
+    btn.attachEvent("onclick", function(){   /*参数为onclick*/
+        alert("clicked");
+    });
+	```
+	detachEvent()也是用来移除相应的事件处理程序
 
 #### 2.5 跨浏览器的事件处理程序
 
