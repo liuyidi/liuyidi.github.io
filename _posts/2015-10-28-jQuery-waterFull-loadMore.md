@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "jQuery-WaterFull-LoadMore"
-date: 2015-10-29 23:20
+date: 2015-10-28 23:20
 categories: [jquery]
 tags: [jquery,business]
 ---
 
 > [参考资料](http://www.aliog.com/17133.html)
 
-+ 一、业务需求
+### 一、业务需求
     - 1.1 根据时间New和点赞数Hot排序;
     - 1.2 用AJAX请求服务器JSON数据;
     - 1.3 通过遍历插入数据到最后;
@@ -20,7 +20,7 @@ tags: [jquery,business]
     - 1.8 点击图片可以查看大图,图片浏览,左右切换,退出事件,支持键盘事件.
     - 1.9 每张图片都拥有图片信息,作者信息,可以对单张图片进行评论,点赞,打赏
 
-+ 二、实现方法
+### 二、实现方法
     
     - 2.1 根据New和Hot排序
         
@@ -28,7 +28,7 @@ tags: [jquery,business]
         - 2.2.1 模拟JSON数据代替ajax获取
         - 2.2.2 通过ajax的post方式获取json数据
         
-           ```js
+        ```js
            //加载函数
            function loadMore(){
                 $.ajax({
@@ -48,31 +48,32 @@ tags: [jquery,business]
                     }
                 });
            }
-           ```
+        ```
 
         - 2.2.3 在加载循环数据中,加入判断数据是否为空的条件,为空则隐藏loading.gif   
            
-           ```js
-            if(data[i]==undefined){
-                $("#loading").fadeOut();
-            }
-           ```
+          ```js
+                if(data[i]==undefined){
+                    $("#loading").fadeOut();
+                }
+          ```
+          
     - 2.3 插入数据
     
         > 以处可采用artTemplate模版引擎
         
-       ```js
-        $.each({ });
+        ```js
+            $.each({ });
         
-        loadMore();  //执行加载函数
-       ```
+            loadMore();  //执行加载函数
+        ```
     
     - 2.4 瀑布流布局jquery.flexImage.js
     
         ```js
-        function waterFull(){
+            function waterFull(){
     
-        }
+            }
         ```
     
     - 2.5 滚动加载更多
@@ -80,12 +81,12 @@ tags: [jquery,business]
         > 滚动距离＋window高度 > 页面高度
         
         ```js
-        $(window).bind("scroll", function(){
-            if($(this).scrollTop() + $(window).height() + 200 >= $(document).height() && $(this).scrollTop() > 200){
-                 $("#loading").fadeOut();  //加载动画
-                 loadMore();
+            $(window).bind("scroll", function(){
+                if($(this).scrollTop() + $(window).height() + 200 >= $(document).height() && $(this).scrollTop() > 200){
+                     $("#loading").fadeOut();  //加载动画
+                     loadMore();
+                }
             }
-        }
         ```
 
 三、优化和注意事项
