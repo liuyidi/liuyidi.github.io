@@ -10,7 +10,9 @@ tags: [javascript]
 {:toc}
 
 > [参考资料](http://blog.csdn.net/luoweifu/article/details/41466537)
+>
 > [参考资料-javascript回调函数整理](https://segmentfault.com/a/1190000000657129)
+>
 > 说明: 回调函数来自于一种著名的编程范式-函数式编程
 
 
@@ -47,15 +49,16 @@ tags: [javascript]
 - 例子二
 
 ```js
-var c = "hello";
-function display(){
-   console.log(arguments[0]);
-};
-//callback为匿名回调函数
-function fun2(c,callback){
-    (callback && typeof(callback) === "function") && callback(c);  //存在且为函数 执行callback
-}
-fun2(c,display);
+    var c = "hello";
+    function display(){
+       console.log(arguments[0]);
+    };
+    //callback为匿名回调函数
+    function fun2(c,callback){
+        //存在且为函数 执行callback
+        (callback && typeof(callback) === "function") && callback(c);  
+    }
+    fun2(c,display);
 ```
 
 ### 回调的使用场合
