@@ -34,65 +34,65 @@ tags: [jquery,business]
 
 ##### 2.2.2 通过ajax的post方式获取json数据
     
-   ```js
+    ```js
     //加载函数
     function loadMore(){
-    $.ajax({
-        ...
-        success: function(data){
-            if(data.errorData == 0){ //表示加载成功
-                $("#loading").fadeOut();  //加载动画隐藏
-                //加载完以后
-                if(data[i]==undefined){
-                    $("#loading").fadeOut();
-                    //显示已经到底了
+        $.ajax({
+            ...
+            success: function(data){
+                if(data.errorData == 0){ //表示加载成功
+                    $("#loading").fadeOut();  //加载动画隐藏
+                    //加载完以后
+                    if(data[i]==undefined){
+                        $("#loading").fadeOut();
+                        //显示已经到底了
+                    }
+                    
+                    //先将加载的json数据封装到imgs数组中
+                    
                 }
-                
-                //先将加载的json数据封装到imgs数组中
-                
             }
-        }
-    });
+        });
     }
-   ```
+    ```
 
 ##### 2.2.3 在加载循环数据中,加入判断数据是否为空的条件,为空则隐藏loading.gif   
            
-   ```js
-    if(data[i]==undefined){
-        $("#loading").fadeOut();
-    }
-   ```
+    ```js
+        if(data[i]==undefined){
+            $("#loading").fadeOut();
+        }
+    ```
           
 #### 2.3 插入数据
     
 > 以处可采用artTemplate模版引擎
         
-   ```js
-        $.each({});
-    
-        loadMore();  //执行加载函数
-   ```
+```js
+$.each({});
+
+loadMore();  //执行加载函数
+```
     
 #### 2.4 瀑布流布局jquery.flexImage.js
     
-   ```js
-        function waterFull(){
-    
-        }
-   ```
+```js
+    function waterFull(){
+
+    }
+```
     
 #### 2.5 滚动加载更多
 
 > 滚动距离＋window高度 > 页面高度
 
-   ```js
-        $(window).bind("scroll", function(){
-            if($(this).scrollTop() + $(window).height() + 200 >= $(document).height() && $(this).scrollTop() > 200){
-                 $("#loading").fadeOut();  //加载动画
-                 loadMore();
-            }
+```js
+    $(window).bind("scroll", function(){
+        if($(this).scrollTop() + $(window).height() + 200 >= $(document).height() && $(this).scrollTop() > 200){
+             $("#loading").fadeOut();  //加载动画
+             loadMore();
         }
-   ```
+    }
+```
 
 ### 三、优化和注意事项
