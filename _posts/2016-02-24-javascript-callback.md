@@ -24,8 +24,9 @@ tags: [javascript]
 ### 回调的例子
 ---
 
-例子一
-```
+- 例子一
+
+```js
     var clientData = {
         id: 091842,
         fullName: "not set",
@@ -39,21 +40,22 @@ tags: [javascript]
             callback.call(callbackObj,firstName,lastName);
         }
     }
-getUserName("liu","yidi",clientData.setUserName,clientData);
-console.log(clientData.fullName);
+    getUserName("liu","yidi",clientData.setUserName,clientData);
+    console.log(clientData.fullName);
 ```
  
-例子二
-```
- var c = "hello";
- function display(){
-    console.log(arguments[0]);
- };
- //callback为匿名回调函数
- function fun2(c,callback){
-     (callback && typeof(callback) === "function") && callback(c);  //存在且为函数 执行callback
- }
- fun2(c,display);
+- 例子二
+
+```js
+var c = "hello";
+function display(){
+   console.log(arguments[0]);
+};
+//callback为匿名回调函数
+function fun2(c,callback){
+    (callback && typeof(callback) === "function") && callback(c);  //存在且为函数 执行callback
+}
+fun2(c,display);
 ```
 
 ### 回调的使用场合
@@ -75,3 +77,4 @@ console.log(clientData.fullName);
       的结果通知给代理函数进行及时处理
       
 ### 回调地狱
+---
