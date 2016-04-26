@@ -34,7 +34,7 @@ tags: [jquery,business]
 
 ##### 2.2.2 通过ajax的post方式获取json数据
     
-    ```js
+```js
     //加载函数
     function loadMore(){
         $.ajax({
@@ -54,15 +54,15 @@ tags: [jquery,business]
             }
         });
     }
-    ```
+```
 
 ##### 2.2.3 在加载循环数据中,加入判断数据是否为空的条件,为空则隐藏loading.gif   
            
-    ```js
-        if(data[i]==undefined){
-            $("#loading").fadeOut();
-        }
-    ```
+```js
+    if(data[i]==undefined){
+        $("#loading").fadeOut();
+    }
+```
           
 #### 2.3 插入数据
     
@@ -76,11 +76,11 @@ loadMore();  //执行加载函数
     
 #### 2.4 瀑布流布局jquery.flexImage.js
     
-      ```js
-        function waterFull(){
+```js
+function waterFull(){
 
-        }
-      ```
+}
+```
     
 #### 2.5 滚动加载更多
 
