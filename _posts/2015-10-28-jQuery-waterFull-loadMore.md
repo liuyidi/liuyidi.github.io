@@ -31,9 +31,10 @@ tags: [jquery,business]
 #### 2.2 Ajax加载数据
 
 ##### 2.2.1 模拟JSON数据代替ajax获取
+
 ##### 2.2.2 通过ajax的post方式获取json数据
     
-    ```js
+   ```js
     //加载函数
     function loadMore(){
     $.ajax({
@@ -53,45 +54,45 @@ tags: [jquery,business]
         }
     });
     }
-    ```
+   ```
 
 ##### 2.2.3 在加载循环数据中,加入判断数据是否为空的条件,为空则隐藏loading.gif   
            
-    ```js
+   ```js
     if(data[i]==undefined){
         $("#loading").fadeOut();
     }
-    ```
+   ```
           
 #### 2.3 插入数据
     
 > 以处可采用artTemplate模版引擎
         
-    ```js
+   ```js
         $.each({});
     
         loadMore();  //执行加载函数
-    ```
+   ```
     
 #### 2.4 瀑布流布局jquery.flexImage.js
     
-    ```js
+   ```js
         function waterFull(){
     
         }
-    ```
+   ```
     
 #### 2.5 滚动加载更多
 
 > 滚动距离＋window高度 > 页面高度
 
-    ```js
+   ```js
         $(window).bind("scroll", function(){
             if($(this).scrollTop() + $(window).height() + 200 >= $(document).height() && $(this).scrollTop() > 200){
                  $("#loading").fadeOut();  //加载动画
                  loadMore();
             }
         }
-    ```
+   ```
 
 ### 三、优化和注意事项
